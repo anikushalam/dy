@@ -1,0 +1,114 @@
+.deskmsgcontainer {
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.deskmsgcontainerh5 {
+  color: var(--heading-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.deskmsgcontainerh5::after {
+  background-color: var(--heading-color);
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 3px;
+
+  bottom: -0.5rem;
+  left: 40%;
+}
+.deskmsg {
+  width: 100%;
+}
+.deskmsgtop {
+  background-color: var(--heading-color);
+
+  padding: 0.5rem;
+}
+.deskmsgtoptabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 0.1px solid var(--strip-bg-color);
+}
+.deskmsgtoptab {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--white-color);
+  cursor: pointer;
+  border-top-right-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+}
+.deskmsgtoptab:hover {
+  border: 0.1px solid var(--white-color);
+}
+.deskmsgtoptabActive {
+  background-color: var(--white-color);
+  color: var(--text-color);
+}
+.deskmsgbody {
+  padding: 0.75rem;
+  display: flex;
+  gap: 1rem;
+  background-color: #fbf9f9;
+  border: 0.1px solid rgb(230, 227, 227);
+}
+.deskmsgbodytext p {
+  white-space: pre-line;
+  font-size: 0.9rem;
+  line-height: 130%;
+  text-align: justify;
+}
+.deskmsgbodyprofile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.deskmsgbodyprofile img {
+  width: 15rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.deskmsgbodyprofile h5 {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+.deskmsgbodyprofile h6 {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+.deskmsgbodyprofile p {
+  color: var(--black-color);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 992px) {
+  .deskmsgbody {
+    flex-direction: column;
+    align-items: center;
+  }
+  .deskmsgbodyprofile img {
+    width: 20rem;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .deskmsgcontainer {
+    padding: 2rem;
+  }
+}

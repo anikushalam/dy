@@ -1,0 +1,133 @@
+.sidebarContainer {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+.sidebartop {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+}
+.inshead {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 22px;
+  margin-bottom: 0.3rem;
+  color: var(--text-color);
+}
+.sidebartop img {
+  cursor: pointer;
+  height: 1.4rem;
+}
+
+.sidebar {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.navItemcontainer {
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 0.1px solid rgb(240, 236, 236);
+}
+.navItemcontainerActive {
+  background-color: var(--menubar-color);
+}
+.navItemcontainer a {
+  text-decoration: none;
+}
+
+.navp {
+  color: var(--black-color);
+}
+.navItemcontainerActive p {
+  color: var(--white-color);
+}
+.droptriangle {
+  height: 0.3rem;
+  margin-left: 0.3rem;
+  margin-bottom: 0.1rem;
+}
+.droptriangleactive {
+  height: 0.7rem;
+  margin-left: 0.3rem;
+}
+.linklist {
+  padding: 1rem;
+  padding-bottom: 0;
+  background-color: #fff;
+}
+.sublistHeading {
+  font-size: 1rem;
+  position: relative;
+  color: var(--menubar-color);
+  margin-bottom: 1.1rem;
+  margin-top: 1.1rem;
+}
+.sublistHeading::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  background-color: rgb(181, 99, 99);
+  bottom: -0.5rem;
+  left: 0;
+}
+.sublistitem,
+.listitem {
+  margin-bottom: 0.75rem;
+  margin-left: 1rem;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+.listitem:hover {
+  transform: translateX(-10px);
+}
+.sublistitem:hover {
+  transform: translateX(-10px);
+}
+.listitem:hover {
+  transform: translateX(-10px);
+}
+.sublistitem:hover a {
+  color: var(--text-color);
+}
+.sublistitem::marker {
+  color: var(--text-color);
+}
+.sublistitem a,
+.listitem a {
+  color: var(--black-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.listitem {
+  list-style: none;
+}
+.affiliation {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: 20px;
+  margin-bottom: 0.2rem;
+
+  color: var(--text-color);
+}
+.insDetailsmid {
+  text-align: center;
+}
+.naac {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 840px) {
+  .sidebarContainer {
+    width: 100vw;
+  }
+}
