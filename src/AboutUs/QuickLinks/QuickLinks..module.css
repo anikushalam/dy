@@ -1,0 +1,315 @@
+.qualityassurancewrap {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonialsh5 {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.testimonialsh5::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  background-color: var(--heading-color);
+  bottom: -0.5rem;
+  left: 40%;
+}
+.qualityassurancecontainer {
+  width: 60rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.lawcard {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  display: grid;
+  place-items: center;
+  border: 1.3px solid var(--heading-color);
+  border-radius: 4px;
+  color: var(--heading-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+.lawcard:hover {
+  background-color: var(--heading-color);
+  color: var(--white-color);
+}
+
+/* ----------Accordion------------------------ */
+.AccordionSection {
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 12rem;
+  background-color: var(--faq-bg-color);
+}
+.accordiontitle {
+  /* color: var(--faq-heading-color); */
+  font-family: "Cormorant SC";
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.plusMinus {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+.Accordion_FAQs {
+  width: 60rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.AccordionStyles_Wrap {
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+
+  background-color: var(--accordion-item-bg-color);
+}
+
+.AccordionStyles_Question {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--heading-color);
+  border-radius: 0.3rem;
+  border-radius: 0.3rem;
+}
+.accordion_subTitle {
+  text-align: start;
+  font-weight: 600;
+  color: var(--white-color);
+}
+.accordion_answer {
+  text-align: start;
+
+  color: var(--about-text-color);
+}
+
+.AccordionStyles_Wrap span {
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accordion-wrap-icon-color);
+}
+
+.AccordionStyles_Dropdown {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ------------------------------------ */
+.Accordion_FAQs .AccordionStyles_Wrap .acccontent {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+.Accordion_FAQs .AccordionStyles_Wrap.accordionactive .acccontent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: 0.5s;
+  height: fit-content;
+}
+.Accordion_FAQs .AccordionStyles_Wrap.accordionactive .acccontent.question_1 {
+  height: 10rem;
+}
+.Accordion_FAQs .AccordionStyles_Wrap.accordionactive .acccontent.question_2,
+.Accordion_FAQs .AccordionStyles_Wrap.accordionactive .acccontent.question_3 {
+  height: 48rem;
+}
+
+.Accordion_FAQs .AccordionStyles_Wrap::-webkit-scrollbar,
+.acccontent::-webkit-scrollbar {
+  width: 0 !important;
+}
+/* ----------Steps--------------- */
+
+.timeline {
+  margin: 0px auto;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.steps__outer {
+  border-left: 2px solid var(--line-color);
+}
+
+/* steps__card container */
+.steps__card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  /* box-shadow: var(--box-shadow); */
+
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* steps__information about the timeline */
+.steps__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* steps__title of the steps__card */
+.steps__text {
+  position: relative;
+  text-align: left;
+}
+
+/* Timeline dot  */
+.steps__text::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--line-dot-color);
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid white;
+}
+.lawlistitem {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.5rem;
+}
+.lawlistitem img {
+  height: 1rem;
+}
+.lawlistitem a {
+  text-decoration: none;
+  color: var(--heading-color);
+  line-height: 130%;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.linklistinner {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+  /* width: 20rem; */
+}
+.listinner {
+  gap: 1rem;
+}
+
+.sublistHeading {
+  font-size: 1.3rem;
+  position: relative;
+  color: var(--black-color);
+  margin-bottom: 1.1rem;
+}
+.sublistHeading::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 3px;
+  background-color: var(--strip-text-color);
+  bottom: -0.5rem;
+  left: 0;
+}
+.sublistitem {
+  margin-bottom: 0.75rem;
+}
+.sublistitem a,
+.sublistitem div,
+.listitem a {
+  color: var(--black-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+
+.sublistitem:hover a {
+  color: var(--menubar-color);
+}
+
+.sublistitem:hover {
+  animation: animate 300ms ease-in-out forwards;
+}
+.impLinksinner {
+  width: 70vw;
+}
+.ourIns {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem;
+}
+
+.insCard {
+  box-shadow: 0 0 10px 0 #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 10rem;
+  width: 18rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+.insCard img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: 13rem;
+}
+.insCard p {
+  color: var(--white-color);
+  margin: 0.75rem 0.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 125%;
+  background-color: var(--text-color);
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+.insCard:hover {
+  transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 992px) {
+  .qualityassurancecontainer {
+    width: 80vw;
+
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

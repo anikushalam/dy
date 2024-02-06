@@ -1,3 +1,4 @@
+import LandingWrapper from "../../LandingWrapper/LandingWrapper";
 import style from "./FacultyList.module.css";
 
 function FacultyList() {
@@ -18,66 +19,68 @@ function FacultyList() {
     },
   ];
   return (
-    <div>
-      <div className={style.tablcontainer}>
-        <table className={style.table}>
-          <tr
-          //   style={{
-          //     backgroundColor: `${instituteTheme ?? "#010D31"}`,
-          //     borderBottom: `3px solid ${instituteTheme ?? "#010D31"}`,
-          //   }}
-          >
-            <th
+    <LandingWrapper>
+      <div className={style.tablwrap}>
+        <div className={style.tablcontainer}>
+          <table className={style.table}>
+            <tr
             //   style={{
             //     backgroundColor: `${instituteTheme ?? "#010D31"}`,
+            //     borderBottom: `3px solid ${instituteTheme ?? "#010D31"}`,
             //   }}
             >
-              Sr. No
-            </th>
-            <th
-            // style={{
-            //   backgroundColor: `${instituteTheme ?? "#010D31"}`,
-            // }}
-            >
-              Staff Name
-            </th>
+              <th
+              //   style={{
+              //     backgroundColor: `${instituteTheme ?? "#010D31"}`,
+              //   }}
+              >
+                Sr. No
+              </th>
+              <th
+              // style={{
+              //   backgroundColor: `${instituteTheme ?? "#010D31"}`,
+              // }}
+              >
+                Staff Name
+              </th>
 
-            <th
-            // style={{
-            //   backgroundColor: `${instituteTheme ?? "#010D31"}`,
-            // }}
-            >
-              Designation
-            </th>
-            <th
-            // style={{
-            //   backgroundColor: `${instituteTheme ?? "#010D31"}`,
-            // }}
-            >
-              Faculty Type
-            </th>
-          </tr>
-
-          {facultyList?.map((faculty, index) => (
-            <tr key={faculty?._id}>
-              <td>{index + 1}</td>
-              <td>
-                {`${faculty?.staffFirstName ?? ""} ${
-                  faculty?.staffMiddleName ?? ""
-                } ${faculty?.staffLastName ?? ""}`}
-              </td>
-
-              <td>{faculty?.current_designation}</td>
-              {faculty?.teaching_type ? (
-                <td>{faculty?.teaching_type}</td>
-              ) : (
-                <td>Other</td>
-              )}
+              <th
+              // style={{
+              //   backgroundColor: `${instituteTheme ?? "#010D31"}`,
+              // }}
+              >
+                Designation
+              </th>
+              <th
+              // style={{
+              //   backgroundColor: `${instituteTheme ?? "#010D31"}`,
+              // }}
+              >
+                Faculty Type
+              </th>
             </tr>
-          ))}
-        </table>
+
+            {facultyList?.map((faculty, index) => (
+              <tr key={faculty?._id}>
+                <td>{index + 1}</td>
+                <td>
+                  {`${faculty?.staffFirstName ?? ""} ${
+                    faculty?.staffMiddleName ?? ""
+                  } ${faculty?.staffLastName ?? ""}`}
+                </td>
+
+                <td>{faculty?.current_designation}</td>
+                {faculty?.teaching_type ? (
+                  <td>{faculty?.teaching_type}</td>
+                ) : (
+                  <td>Other</td>
+                )}
+              </tr>
+            ))}
+          </table>
+        </div>
       </div>
-    </div>
+    </LandingWrapper>
   );
 }
 

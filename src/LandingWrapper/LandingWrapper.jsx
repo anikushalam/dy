@@ -279,32 +279,32 @@ function LandingWrapper({ children }) {
     },
     {
       name: "Faculty Resources",
-      id: 1,
+      id: 2,
       url: "faculty-resources",
     },
     {
-      name: "Faculty Resources",
-      id: 1,
-      url: "faculty-resources",
+      name: "Social Outreach",
+      id: 3,
+      url: "social-outreach",
     },
     {
       name: "Teaching-Learning Activities",
-      id: 1,
+      id: 4,
       url: "teaching-activities",
     },
     {
       name: "Academic Calendars",
-      id: 1,
+      id: 5,
       url: "academic-calendars",
     },
     {
       name: "Information Brochure",
-      id: 1,
+      id: 6,
       url: "info-brochure",
     },
     {
       name: "Programmes",
-      id: 1,
+      id: 7,
       url: "programmes",
     },
   ];
@@ -478,7 +478,7 @@ function LandingWrapper({ children }) {
                                   {tab?.name}
                                 </a>
                               ) : (
-                                <Link to={tab?.url}>{tab?.name}</Link>
+                                <Link to={`/${tab?.url}`}>{tab?.name}</Link>
                               )}
                             </li>
                           </div>
@@ -515,7 +515,7 @@ function LandingWrapper({ children }) {
                                   {tab?.name}
                                 </a>
                               ) : (
-                                <Link to={tab?.url}>{tab?.name}</Link>
+                                <Link to={`/${tab?.url}`}>{tab?.name}</Link>
                               )}
                             </li>
                           </div>
